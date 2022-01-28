@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0-dev.5",
+    "description": "Standalone ver of mason template builder",
+    "homepage": "https://github.com/nridwan/mason_standalone_builder",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nridwan/mason_standalone_builder/releases/download/v0.1.0-dev.5/windows.7z",
+            "hash": "D32D0CB6AEEDFEE477A25268058E668F4D35391A24CF342703B04D508C17FFEC"
+        }
+    },
+    "env_add_path": "bin",
+    "checkver": {
+        "github": "https://github.com/nridwan/mason_standalone_builder"
+    },
+    "post_install": [
+      "Write-Host 'Mason Standalone successfully installed'"
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$version/windows.7z",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
+  }
+  
+  
