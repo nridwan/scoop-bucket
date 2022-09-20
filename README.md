@@ -5,7 +5,6 @@ Current available packages:
 | package name | scoop name | version |
 | --- | --- | --- |
 | mason | mason-standalone | 0.1.0-dev.5 |
-| vlang | vlang | weekly.2022.04 |
 
 
 ## Install Scoop
